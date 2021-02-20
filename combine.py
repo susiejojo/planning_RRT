@@ -29,7 +29,7 @@ def frames_to_video(input_path, output_path, fps1,fps2):
 
     frames = []
 
-    for i in range(1497,1546):
+    for i in range(3349,3402):
         # f = f"{input_path}/{i}.png"
         f = f"nonhn_data/snap{i}.png" 
         frame = cv2.imread(f)
@@ -45,4 +45,4 @@ def frames_to_video(input_path, output_path, fps1,fps2):
     video_writer.release()
     return True
 
-frames_to_video("nonhn_data/*.png","results/nh_simulation2.mp4", 25,2)
+frames_to_video("nonhn_data/*.png","results/nh_simulation2.mp4", 10,2)
